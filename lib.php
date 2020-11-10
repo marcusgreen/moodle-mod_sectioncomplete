@@ -140,6 +140,9 @@ function sectioncomplete_cm_info_view(cm_info $cm) {
 function sectioncomplete_completionstate($course) {
 
     $completion = new completion_info($course);
+    if (!$completion->is_enabled()) {
+        //deal with disabled completion tracking.
+    }
 
     if ($completion = 'yes') {
         return false;

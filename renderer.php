@@ -31,8 +31,7 @@ class mod_sectioncomplete_renderer extends \plugin_renderer_base {
         global $CFG, $DB, $USER;
 
         $title = $cm->name;
-        //TODO Kieran, need to actually get the course, probably from $cm
-        if(sectioncomplete_completionstate($cm->id)) {
+        if(sectioncomplete_completionstate($cm->get_course())) {
             $button = $CFG->wwwroot ."/mod/sectioncomplete/pix/completed.svg";
         } else {
             $button = $CFG->wwwroot ."/mod/sectioncomplete/pix/tocomplete.svg";

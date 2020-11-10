@@ -1,3 +1,3 @@
 ### Completion module for Moodle courses
 
-Plugin description goes here
+This plugin gives a visual representation for the student to see if they have completed a section.  When they get to the bottom of the section, they will click the button.  This will tick this 'activity' as being complete.  It changes color and triggers the core completion code to run.  Then each time the user logs in it will show the  button as completed for them.
